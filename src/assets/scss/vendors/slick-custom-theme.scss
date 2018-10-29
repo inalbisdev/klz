@@ -1,0 +1,149 @@
+.slick{
+  /*Graceful load for slider*/
+
+  &-slider{
+    @media (max-width: 1023px){
+      //margin-top: -32px;
+    }
+    @media (min-width: 1024px){
+      //margin-top: -42px;
+    }
+    opacity: 0;
+    transition: .6s opacity;
+    &:not(.slick-initialized){
+      display: flex;
+    }
+    &.slick-initialized{
+      opacity: 1;
+    }
+  }
+  &-arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    top: calc(50% - 100px);
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    &--left{
+      left: -20px;
+      transform: rotate(135deg);
+    }
+    &--right{
+      right: -20px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &-progress{
+    &-dots{
+      .slick-dots{
+        display: flex;
+        align-items: center;
+        li{
+          height: 4px;
+          background-color: rgba(255,255,255,.4);
+          border-radius: 4px;
+          width: 100%;
+          position: relative;
+          margin: 0 10px;
+          button{
+            border: none;
+            padding: 0;
+            margin: 0;
+            text-indent: -9999px;
+          }
+          &:not(.slick-active){
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+        .dots-progress{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  &-absolute-dots{
+    .slick-dots{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      flex-direction: column;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (max-width: 480px){
+        right: 5px;
+      }
+      li{
+        margin-bottom: 4px;
+        cursor: pointer;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        &.slick-active{
+          button{
+            background: $color-primary;
+          }
+        }
+        button{
+          transition: .4s transform;
+          cursor: pointer;
+          outline: none;
+          border: 1px solid $color-primary;
+          background: #fff;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          text-indent: -9999px;
+
+        }
+      }
+    }
+  }
+  &-right-stage-padding{
+    margin-right: -5vw;
+    .slick-slide{
+      margin: 0 32px 0 0;
+    }
+    .slick-list{
+      padding-left: 0 !important;
+    }
+  }
+
+  /*Arrow Refactor*/
+  &-arrow{
+    cursor: pointer;
+    @media (max-width: 480px){
+      display: none;
+    }
+  }
+
+  &-arrows-bottom{
+    .slick-arrow{
+      position: absolute;
+      bottom: -64px;
+      right: calc(5vw - 10px);//Lo hacemos al añadir el ancho
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      &--left{
+        right: calc(5vw + 50px)
+      }
+      &--right{}
+    }
+  }
+
+}

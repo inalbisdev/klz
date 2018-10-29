@@ -1,0 +1,50 @@
+.og-i18n-flag {
+  &--fold {
+    overflow: hidden;
+  }
+  &--unfold {
+    z-index: 1;
+    .og-i18n-flag--list {
+    }
+  }
+  &--list {
+    display: flex;
+  }
+  &--element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    padding: 0 5px;
+    cursor: pointer;
+    &--text {
+      font-size: 12px;
+      margin: 0;
+      place-self: center;
+      color: #fff;
+      padding-left: 5px;
+      .is-active &{
+        color: $color-primary;
+      }
+    }
+    &--svg {
+      width: 20px;
+      height: 20px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &.is-active{
+      pointer-events: none;
+    }
+
+  }
+}
+
+
+.translated-ltr{
+  .o-header{
+    top: 40px;
+  }
+}

@@ -1,0 +1,42 @@
+.m-submenu{
+  background-color: #FAFAFA;
+  border: 1px solid #979797;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  min-width: 420px;
+  width: 100%;
+  padding: 25px 25px 5px 25px;
+  &__title{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+    &::after{
+      content: "";
+      bottom: -3px;
+      position: absolute;
+      width: 0;
+      height: 3px;
+      left: 0;
+      background: $gradient-klarenz;
+      transition: .6s width linear;
+    }
+  }
+  &__links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item{
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  &__link{
+    font-size: 14px;
+    text-decoration: none;
+    color: $color-black;
+
+    &:hover{
+      color: $color-primary;
+    }
+  }
+}

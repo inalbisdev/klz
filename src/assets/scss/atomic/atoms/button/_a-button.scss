@@ -1,0 +1,104 @@
+@import "../../../vars/glob";
+
+.a-button{
+  padding: 18px 20px;
+  border: $a-button-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $a-button-border-radius;
+
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: $a-button-font-size;
+  line-height: $a-button-line-height;
+  transition: .6s box-shadow;
+  font-family: $font-bold;
+  @if $a-animation-ripple {
+    overflow: hidden;
+  }
+  @media (max-width: 480px){
+    font-size: 12px;
+  }
+
+
+  &__icon{
+    margin-left: 15px;
+  }
+  &__text{
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  /*Efecto para el boton on click*/
+  &__ripple{
+    @if $a-animation-ripple {
+      animation: effectRipple 2s linear;
+      background: rgba(255,255,255,.4);
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      will-change: transform;
+    }
+  }
+  &--narrow{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 5px 20px;
+  }
+  &--berlin{
+    background: $a-button-berlin-background;
+    color: $a-button-berlin-color;
+    transition: .6s background, .6s color;
+    border: 1px solid transparent;
+    .a-button__icon{
+      border-color:  $a-button-berlin-color;
+    }
+    &:hover{
+      background: #fff;
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+  &--moskva{
+    background: $a-button-moskva-background;
+    color: $a-button-moskva-color;
+    border: 1px solid transparent;
+    transition: .6s background-color;
+    &:hover{
+      background: $color-white;
+      color: $color-black;
+      border-color: $color-black;
+    }
+  }
+  &--oslo{
+    background: $a-button-oslo-background;
+    color: $a-button-oslo-color;
+    border: 1px solid transparent;
+    transition: .6s background-color;
+    &:hover{
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+  &--paris{
+    background: $a-button-paris-background;
+    color: $a-button-paris-color;
+  }
+
+  &--fit{
+    display: inline-flex;
+  }
+
+  &--has-icon{
+    &:hover{
+      .a-button__icon{
+
+      }
+    }
+  }
+
+}

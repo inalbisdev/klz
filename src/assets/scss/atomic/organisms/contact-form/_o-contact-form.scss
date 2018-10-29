@@ -1,0 +1,11 @@
+.o-contact-form{
+  &__heading{
+    padding-bottom: 60px;
+    &-title{}
+    &-text{}
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,74 @@
+<div class="o-contact-form u-fit-width">
+    <div class="o-contact-form__heading">
+        <h3 class="a-typo-hawking a-color-primary a-typo--bold u-mb-40">
+            Rellena este formulario y cuentanos que necesitas.
+        </h3>
+        <p>
+            Puedes contactar con nosotros mediante este formulario y nos pondremos en contacto contigo lo antes posible.
+        </p>
+
+    </div>
+    <div class="o-contact-form__form">
+        <form method="post" name="contact-form" action="contacto.php">
+            <div class="m-field__row">
+                <div class="m-field">
+                    <input class="a-input is-required" type="text" name="name" id="name" placeholder="Introduce un nombre"/>
+                    <label for="name" class="m-field__label">
+                        Nombre
+                    </label>
+                </div>
+                <div class="m-field">
+                    <input class="a-input is-required" type="tel" name="phone" id="phone" placeholder="Introduce un télefono"/>
+                    <label for="phone" class="m-field__label">
+                        Teléfono
+                    </label>
+                </div>
+                <div class="m-field">
+                    <input class="a-input is-required" type="text" name="surname" id="surname" placeholder="Introduce un apellido"/>
+                    <label for="surname" class="m-field__label">
+                        Apellidos
+                    </label>
+                </div>
+                <div class="m-field">
+                    <input class="a-input" type="text" name="company" id="company" placeholder="Introduce una empresa"/>
+                    <label for="company" class="m-field__label">
+                        Empresa
+                        <span class="m-field__label-opt">*Opcional</span>
+                    </label>
+                </div>
+                <div class="m-field">
+                    <input class="a-input is-required" type="text" name="email" id="email" placeholder="Introduce un email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+                    <label for="email" class="m-field__label">
+                        Email
+                    </label>
+                </div>
+                <div class="m-field m-field--has-arrow">
+
+                    <select class="a-input is-required" name="request" id="request">
+                        <option value="">Selecciona un tipo de consulta:</option>
+                        <option value="Marketing Online">Marketing Online</option>
+                        <option value="Mobile Marketing">Mobile Marketing</option>
+                        <option value="Desarrollo Apps">Desarrollo Apps</option>
+                        <option value="Desarrollo Web">Desarrollo Web</option>
+                        <option value="ux/ui">UX/UI</option>
+                        <option value="Web Performance and Audits">Web Performance and Audits</option>
+                        <option value="AB Testing">AB Testing</option>
+                        <option value="Social Media Management">Social Media Management</option>
+                    </select>
+                    <!--
+                    <input class="a-input" type="text" name="request" id="request" placeholder="Escribe tu consulta" data-required/>
+                    -->
+                    <label for="email" class="m-field__label">
+                        Tipo de proyecto o consulta
+                    </label>
+                </div>
+            </div>
+            <div class="m-field__button">
+                <button id="submitForm" type="submit" class="a-button a-button--berlin   u-uppercase">Enviar consulta</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

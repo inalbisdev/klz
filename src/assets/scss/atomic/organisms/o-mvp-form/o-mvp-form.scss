@@ -1,0 +1,112 @@
+.o-mvp {
+  max-width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transform: translateX(100%);
+  transition: .6s transform;
+  will-change: transform;
+  padding: 20px 20px 100px;
+  @media (max-width: 480px){
+    padding: 10px 10px 50px;
+  }
+  &.is-active {
+    transform: translateX(0);
+  }
+
+  &__logo{
+    display: block;
+    padding-bottom: 32px;
+    @media (max-width: 480px){
+      padding-bottom: 16px;
+    }
+    svg{
+      width: 150px;
+      @media (max-width: 480px){
+        width: 100px;
+      }
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+    //padding-bottom: 100px;
+    height: 100%;
+
+
+    width: 100%;
+    //max-height: calc(100% - 200px);
+    overflow-y: auto;
+    .m-field {
+      opacity: 0.5;
+      transition: .6s opacity;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+  &__close {
+    color: #000;
+    font-family: $font-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  &__actions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $color-primary;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    padding: 5px 0;
+    .m-field__button{
+      margin-top: 0;
+      margin-left: 16px;
+    }
+    .a-button{
+      @media (max-width: 480px){
+        padding: 7.5px;
+        height: 100%;
+
+      }
+    }
+  }
+  &__progress {
+    background: rgba(169, 38, 26, 0.75);
+    color: #fff;
+    padding: 15px;
+    @media (max-width: 480px){
+      padding: 7.5px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    &-num {
+      font-family: $font-bold;
+    }
+
+  }
+
+  /*Hard Reset*/
+  textarea {
+    outline: none;
+    padding: 0;
+  }
+}

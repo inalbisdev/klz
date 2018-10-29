@@ -1,0 +1,32 @@
+<article class="m-card {{class}}" itemscope itemtype ="https://schema.org/Service">
+
+    {{#if m-card__media}}
+    <div class="m-card__media {{m-card__media-class}}">
+        <picture>
+            <img src="{{root}}{{m-card__media}}"/>
+        </picture>
+    </div>
+
+    {{/if}}
+
+    <div class="m-card__body">
+        {{#if m-card__avobe-line}}
+        <div class="m-card__avobe-line a-typo-edison a-typo--bold">
+            {{m-card__avobe-line}}
+        </div>
+        {{/if}}
+        <h3 class="m-card__title  {{#if m-card__title-class}} {{m-card__title-class}}{{else}}a-typo-hawking a-color-primary{{/if}} a-typo--bold" itemprop="serviceType">
+           {{{m-card__title}}}
+        </h3>
+        <p class="m-card__text" itemprop="description">
+            {{{m-card__text}}}
+        </p>
+        {{#if m-card__button}}
+        <div class="m-card__button">
+            <a href="{{{m-card__button-href}}}" class="a-button {{#if m-card__button-class}} {{m-card__button-class}}  {{else}}a-button--moskva {{/if}} u-uppercase">
+              {{m-card__button}}
+            </a>
+        </div>
+        {{/if}}
+    </div>
+</article>

@@ -1,0 +1,20 @@
+@import "../../../vars/glob";
+
+.m-heading {
+  max-width: 1000px;
+  margin: 100px auto;
+  @media (max-width: 480px){
+    margin: 50px auto;
+  }
+  &__text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &--center{
+    .m-heading__text{
+      justify-content: center;
+    }
+  }
+}

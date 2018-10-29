@@ -1,0 +1,51 @@
+@import "../../../vars/glob";
+
+.l{
+  max-width: 100%;
+  &--fit{
+    max-width: $l__container-max-width;
+    padding-left: $l__container-left-padding;
+    padding-right: $l__container-right-padding;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 899px){
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media (max-width: 480px){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
+  &--inside{
+    padding-left: 100px;
+    padding-right: 100px;
+    @media (max-width: 899px){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: 480px){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+
+  &-main{
+    &__main{
+      margin-top: 108px;
+      @media (max-width: 1023px){
+        margin-top: 68px;
+      }
+      &--expand{
+        margin-top: 150px;
+        @media (max-width: 1023px){
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
+

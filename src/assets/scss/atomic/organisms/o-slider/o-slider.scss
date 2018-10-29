@@ -1,0 +1,24 @@
+.o-slider{
+  .m-main-banner{
+    margin-bottom: 0;
+    &__content{
+      @media (max-width: 767px){
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        margin: 0 auto;
+      }
+    }
+    &__picture{
+      @media (max-width: 420px){
+        min-height: 420px;
+      }
+      &::before{
+        @media (max-width: 767px){
+          padding-top: 100%;
+        }
+      }
+    }
+  }
+}

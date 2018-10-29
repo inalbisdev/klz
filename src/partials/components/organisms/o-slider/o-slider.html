@@ -1,0 +1,33 @@
+<div class="o-slider js-slick slick-slider slick-absolute-dots"
+     data-slick='{"arrows":false,"dots": true,"slidesToShow": 1,"autoplay": false, "autoplaySpeed": 4000}'>
+
+    {{#repeat 2}}
+    <div class="m-main-banner">
+        <div class="m-main-banner__media">
+            <picture class="m-main-banner__picture a-picture">
+                <source data-srcset="{{root}}assets/media/images{{media}}.webp" type="image/webp">
+                <source data-srcset="{{root}}assets/media/images{{media}}.jpg" type="image/jpeg">
+                <img class="a-picture__img u-mh-auto u-media-cover lazyload"
+                     data-src="{{root}}assets/media/images{{media}}.jpg" src=""
+                     alt="Klarenz Agencia Digital"
+                     title="Klarenz Agencia Digital"/>
+            </picture>
+        </div>
+        <div class="m-main-banner__content a-color-white">
+            <div class="m-main-banner__avobe-line a-typo-edison">
+                Klarenz Agency | Agencia Digital y Consultora
+            </div>
+            <h1 class="m-main-banner__title a-typo-tesla">
+                Somos una Agencia Digital<br> Creativa y Consultora<br> de proyectos digitales
+            </h1>
+            <div class="m-main-banner__claim a-typo-tesla a-typo--bold">¿Hablamos?</div>
+            <div class="m-main-banner__button">
+                <a href="contacta-con-nosotros.html" class="a-button a-button--fit a-button--oslo u-uppercase">
+                    Cuentanos tu proyecto
+                </a>
+            </div>
+        </div>
+    </div>
+    {{/repeat}}
+
+</div>

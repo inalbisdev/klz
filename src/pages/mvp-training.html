@@ -1,0 +1,139 @@
+---
+layout: default
+title: MVP Training
+---
+
+
+<section class="l l-mvp l--fit u-mv-48">
+
+
+    <div class="m-heading m-heading--center u-align-center" id="js-mvp-intro">
+        <h3 class="m-heading__text a-typo-einstein">
+            Responde este breve formulario para aplicar al <br><span class="a-color-primary">"MVP Training"</span>
+        </h3>
+        <p class="a-typo-hawking u-mv-32">
+            Respondiendo a las preguntas siguientes podrás obtener un <span
+                class="a-color-primary">"MVP Training"</span>.
+            Consistente a una sesión de 2h de asesoramiento online con nuestro equipo de <span
+                class="a-color-primary">validación de ideas y creación de MVP's</span>.
+
+        </p>
+        <a href="#" class="a-button a-button--fit a-button--berlin u-uppercase" id="js-mvp-start">
+            Empezar formulario
+        </a>
+        <div class="a-separator a-separator--2"></div>
+    </div>
+
+
+    <div class="o-mvp" id="js-mvp-content">
+
+        <a class="o-mvp__close">Cerrar</a>
+        <a class="o-mvp__logo">
+            {{> a-logo-color}}
+        </a>
+        <div class="o-mvp__actions">
+            <div class="o-mvp__progress">
+                <div class="o-mvp__progress-text"><span class="o-mvp__progress-num">0</span>% Completado</div>
+                <div class="o-mvp__progress-bar"></div>
+            </div>
+            <div class="m-field__button">
+                <button id="submitMvp" type="submit" class="a-button a-button--oslo u-uppercase">
+                    Enviar consulta
+                </button>
+            </div>
+
+        </div>
+        <div class="o-mvp__form">
+            <form method="post" name="mvpForm" id="mvpForm">
+                <div class="m-field__row">
+                    <div class="m-field">
+                        <input data-error="Introduce un nombre" class="a-input is-required" type="text" name="name" id="name"
+                               placeholder="Por favor, especifica nombre y apellidos."/>
+                        <label for="name" class="m-field__label">
+                            1. ¿Cual es tu nombre?
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce un email" class="a-input is-required" type="text" name="email" id="email"
+                               placeholder="Introduce un email"/>
+                        <label for="email" class="m-field__label">
+                            2. ¿En qué email te podemos contactar si obtienes el premio? *
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce una compañia" class="a-input is-required" type="text" name="company" id="company"
+                               placeholder="Introduce tu compañia o proyecto"/>
+                        <label for="company" class="m-field__label">
+                            3. ¿Cuál es el nombre de tu compañía o proyecto? *
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce un rol" class="a-input is-required" type="text" name="rol" id="rol"
+                               placeholder="Introduce tu rol"/>
+                        <label for="rol" class="m-field__label">
+                            4. ¿Cuál es tu rol en este proyecto? *
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Explica tu idea" class="a-input is-required" type="text" name="idea" id="idea"
+                               placeholder="Introduce tu rol"/>
+                        <label for="idea" class="m-field__label">
+                            5. Describe tu idea de negocio en un "tweet"
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Describe tu propuesta" class="a-input is-required" type="text" name="proposal" id="proposal"
+                               placeholder="Introduce tu propuesta"/>
+                        <label for="proposal" class="m-field__label">
+                            6. ¿Cuál es la propuesta de valor de tu idea? *
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce una plataforma" class="a-input is-required" type="text" name="platform" id="platform"
+                               placeholder="Web,Mobile,TV..."/>
+                        <label for="platform" class="m-field__label">
+                            7. ¿Cuál es la plataforma principal para tu producto?
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce una opción" class="a-input is-required" type="text" name="design" id="design"
+                               placeholder="Introduce una opción"/>
+                        <label for="design" class="m-field__label">
+                            8. ¿Tienes algún tipo de diseño como Wireframes, Mockups o Diseños finalizados? *
+                        </label>
+                    </div>
+                    <div class="m-field">
+                        <input data-error="Introduce un presupuesto" class="a-input is-required" type="text" name="budget" id="budget"
+                               placeholder="Introduce una opción"/>
+                        <label for="budget" class="m-field__label">
+                            9. ¿Cual es el presupuesto de tu proyecto? *
+                        </label>
+                    </div>
+
+                    <div class="m-field">
+                        <input data-error="¿Existe deadline?" class="a-input is-required" type="text" name="deadline" id="deadline"
+                               placeholder="Introduce una opción"/>
+                        <label for="deadline" class="m-field__label">
+                            10. ¿Tu proyecto tiene deadline? *
+                        </label>
+                    </div>
+
+
+                </div>
+            </form>
+
+
+
+        </div>
+    </div><!-- Fin o-mvp -->
+
+
+
+</section>
+
+
+
+
+
+
+

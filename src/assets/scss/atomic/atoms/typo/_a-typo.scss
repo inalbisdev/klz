@@ -1,0 +1,97 @@
+@import "../../../vars/glob";
+@import "../../../mixins/glob";
+
+
+
+
+
+/*Modifiers based on cientific names*/
+
+.a-typo{
+
+  &--regular{
+    font-family: $font-regular;
+  }
+  &--thin{
+    font-family: $font-thin;
+  }
+
+  &--light{
+    font-family: $font-light;
+  }
+
+  &--medium{
+    font-family: $font-medium;
+  }
+
+  &--bold{
+    font-family: $font-bold;
+    font-weight: 400;
+  }
+
+  &-tesla{
+    font-size: 50px;
+    line-height: 60px;
+    @media (max-width: 899px){
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media (max-width: 480px){
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  &-hawking{
+    font-size: 30px;
+    line-height: 36px;
+    @media (max-width: 480px){
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &-edison{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &-einstein{
+    font-size: 40px;
+    line-height: 47px;
+    @media (max-width: 480px){
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+
+
+  /*
+  &-einstein{
+    @include generateTypo(44px,50px);
+    letter-spacing: -1px;
+  }
+  &-curie{
+    @include generateTypo(28px,40px);
+    letter-spacing: -0.5px;
+  }
+  &-kepler{
+    @include generateTypo(16px,24px);
+  }
+  &-mendel{
+    @include generateTypo(14px,17px);
+  }
+  &-pascal{
+    @include generateTypo(24px,28px);
+  }
+  */
+  &-has-left-line{
+    padding-left: 16px;
+    border-left: 8px solid #333;
+  }
+  &-has-right-line{
+    padding-right: 16px;
+    border-right: 8px solid #333;
+  }
+}

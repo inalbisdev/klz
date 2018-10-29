@@ -1,0 +1,121 @@
+.o-nav-mobile{
+  padding: 80px 50px 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  justify-content: space-between;
+  @media (max-width: 320px){
+    padding: 80px 20px 10px;
+  }
+  &__close{
+    color: $color-white;
+    font-family: $font-bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    top: 30px;
+    right: 50px;
+    position: absolute;
+    cursor: pointer;
+    @media (max-width: 320px){
+      top: 20px;
+      right: 20px;
+    }
+  }
+  &__links{
+    margin-bottom: 40px;
+    &-item{
+      margin-bottom: 30px;
+      display: block;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &--has-submenu{
+        .o-nav-mobile__links-link{
+          display: flex;
+          align-items: center;
+          &.is-active{
+            svg{
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+    &-link{
+      font-size: 30px;
+      color: $color-white;
+      font-family: $font-bold;
+      line-height: 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  &__box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    &::before{
+      content: "";
+      top: 0;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      background: $gradient-klarenz;
+    }
+    &--lang{
+      flex-direction: row;
+      .o-nav-mobile__link{
+        margin-right: 20px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__bottom{
+    max-width: 75%;
+  }
+  &__link{
+    font-size: 15px;
+    font-family: $font-bold;
+    line-height: 18px;
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-decoration: none;
+    &.is-active{
+      color: $color-primary;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__arrow{
+    width: 20px;
+    height: 16px;
+    transform: rotate(-90deg);
+    transition: .6s transform;
+    margin-left: 10px;
+  }
+  &__submenu{
+    margin-top: 16px;
+    display: none;
+    &-item{
+      margin-bottom: 16px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &-link{
+      font-size: 16px;
+      color: $color-white;
+      text-decoration: none;
+    }
+    &.is-active{
+      display: block;
+    }
+  }
+}
