@@ -34,8 +34,7 @@ function loadConfig() {
 }
 
 gulp.task('fonts', function () {
-    return gulp.src([
-        'src/assets/fonts/.*'])
+    return gulp.src(['src/assets/fonts/.*'])
         .pipe(gulp.dest('dist/assets/fonts/'));
 });
 
@@ -69,7 +68,7 @@ gulp.task('webpack', function () {
                     ]
                 }
             ],
-            /*
+
             plugins: [new UglifyJsPlugin({
                 uglifyOptions: {
                     output: {
@@ -78,7 +77,7 @@ gulp.task('webpack', function () {
                     }
                 }
             })]
-            */
+
         }))
         .pipe(gulp.dest('dist/assets/javascript/'));
 });

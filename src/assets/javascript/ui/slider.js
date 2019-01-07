@@ -15,6 +15,11 @@ module.exports = {
         $el.slick({
             nextArrow: '<a class="slick-arrow slick-arrow--left"></a>',
             prevArrow: '<a class="slick-arrow slick-arrow--right"></a>',
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 4000
         });
     },
 

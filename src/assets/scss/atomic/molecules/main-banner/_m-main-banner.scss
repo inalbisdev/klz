@@ -16,10 +16,20 @@
     @media (max-width: 1023px){
       //display: none;
     }
+    &::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000,.5);
+      content: "";
+    }
   }
   &__content{
     //@media (min-width: 1024px){
       position: absolute;
+      max-width: 610px;
       top: 50%;
       transform: translateY(-50%);
       left: 70px;
@@ -29,7 +39,12 @@
     }
 
   }
-  &__avobe-line{}
+  &__avobe-line{
+    @media (max-width: 480px){
+      font-family: $font-bold;
+      font-size: 16px;
+    }
+  }
   &__title{}
   &__claim{}
   &__button{

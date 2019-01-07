@@ -6,13 +6,38 @@ title: Mobile Marketing
 {{> o-secondary-navigation active="2"}}
 
 
-{{> o-slider
-    media="/services/mobile-marketing"
-}}
+<div class="o-slider ">
+    <div class="js-slick slick-slider slick-absolute-dots">
+        <div class="m-main-banner">
+            <div class="m-main-banner__media">
+                <picture class="m-main-banner__picture a-picture">
+                    <source data-srcset="{{root}}assets/media/images/services/mobile-marketing.webp" type="image/webp">
+                    <source data-srcset="{{root}}assets/media/images/services/mobile-marketing.jpg" type="image/jpeg">
+                    <img class="a-picture__img u-mh-auto u-media-cover lazyload"
+                         data-src="{{root}}assets/media/images/services/mobile-marketing.jpg" src=""
+                         alt="Klarenz Agencia Digital"
+                         title="Klarenz Agencia Digital"/>
+                </picture>
+            </div>
+            <div class="m-main-banner__content a-color-white">
+                <div class="m-main-banner__avobe-line a-typo-edison">
+                    Mobile Marketing
+                </div>
+                <h1 class="m-main-banner__title a-typo-tesla">
+                    Campañas de publicidad online enfocadas 100% mobile.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <img class="o-slider__claim lazyload"
+         data-src="{{root}}assets/media/images/services/logo.svg" src=""
+         alt="Klarenz Agencia Digital"
+         title="Klarenz Agencia Digital"/>
+</div>
 
 
+{{> m-highlight-heading text="Mobile Marketing" fit="true"}}
 
-{{> m-highlight-heading text="Mobile Marketing"}}
 <section class="l l--fit l--inside">
     <div class="u-fit-width u-mt-100">
         <h3 class="a-typo-hawking a-color-primary a-typo--bold u-mb-40">

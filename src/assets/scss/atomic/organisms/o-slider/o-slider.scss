@@ -1,4 +1,17 @@
 .o-slider{
+  position: relative;
+  &__claim{
+    position: absolute;
+    @media (min-width: 600px){
+      bottom: 50px;
+      right: 50px;
+    }
+    @media (max-width: 599px){
+      bottom: 20px;
+      transform: scale(.8);
+      right: 0;
+    }
+  }
   .m-main-banner{
     margin-bottom: 0;
     &__content{
@@ -11,8 +24,12 @@
       }
     }
     &__picture{
+      height: 450px;
       @media (max-width: 420px){
-        min-height: 420px;
+        //min-height: 480px;
+      }
+      @media (max-width: 360px){
+        //min-height: 500px;
       }
       &::before{
         @media (max-width: 767px){

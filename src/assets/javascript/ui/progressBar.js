@@ -58,13 +58,13 @@ module.exports = {
     },
 
 
-    updateProgressBar: function (isDevice) {
+    updateProgressBar: function () {
 
         this.drawElements();
 
 
         let windowTop = utils.viewPortTop(),
-            documentHeight = $('body').innerHeight(),
+            documentHeight = document.documentElement.scrollHeight,
             windowHeight = utils.getOuterHeight($(window)),
             totalScroll = Math.round((windowTop / (documentHeight - windowHeight)) * 100);
 
