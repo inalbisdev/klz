@@ -38,17 +38,17 @@
 
 /*1.1 Base Font Configuration*/
 $base-font-fallback: Sans-serif, Helvetica, sans-serif !default;
-$base-font-custom : "Helvetica Regular" !default;
+$base-font-custom : "Open Sans" !default;
 $base-font-family: $base-font-custom,$base-font-fallback;
-$base-font-size: 20px !default;
-$base-line-height: 23px !default;
-$base-font-color: #222;
+$base-font-size: 16px !default;
+$base-line-height: 20px !default;
+$base-font-color: #4f4d4d;
 
-$font-regular: "Helvetica Regular";
-$font-thin: "Helvetica Thin";
-$font-light: "Helvetica Light";
-$font-medium: "Helvetica Medium";
-$font-bold: "Helvetica Bold";
+$font-regular: "Open Sans";
+$font-thin: "Open Sans";
+$font-light: "Open Sans";
+$font-medium: "Open Sans";
+$font-bold: "Open Sans";
 
 
 /*1.2 Media Queries*/
@@ -76,7 +76,7 @@ $color-secondary: #e5007e;
 $color-secondary-dark: darken($color-secondary,10%);
 $color-secondary-light: lighten($color-secondary,10%);
 $color-black: #000 !default;
-$color-grey: #f2f4f7 !default;
+$color-grey: #4f4d4d !default;
 
 
 
@@ -92,6 +92,7 @@ $brand-colors: (
         "secondary": $color-secondary,
         "black": $color-black,
         "white": $color-white,
+        "grey": #4f4d4d
 ) !default;
 
 /*1.5 Gradient Variations*/
@@ -128,7 +129,7 @@ $icons-sizes: (
 /*2 Atoms*/
 
 /*2.1 Buttons*/
-$a-button-border-radius: 0 !default;
+$a-button-border-radius: 2px !default;
 $a-button-box-shadow: 0 1px 3px 0 rgba(0,0,0,.5) !default;
 $a-button-border: none !default;
 $a-button-padding: 15px !default;
@@ -151,7 +152,10 @@ $a-button-moskva-color: $color-white !default;
 $a-button-oslo-background: $color-white !default;
 $a-button-oslo-color: $color-black !default;
 
+$a-button-madrid-background: #7a8cfc;
+$a-button-madrid-color: #fff;
 
+//#4451aa
 
 /*2.2 Fav*/
 
@@ -189,5 +193,5 @@ $o-newsletter-border-radius: $m-card__media-border-radius !default;
 
 /*5.1 Base Layout Configuration*/
 $l__container-max-width: 100% !default;
-$l__container-left-padding: 50px !default;
-$l__container-right-padding: 50px !default;
+$l__container-left-padding: 40px !default;
+$l__container-right-padding: 40px !default;

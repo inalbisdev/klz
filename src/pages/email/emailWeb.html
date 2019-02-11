@@ -1,0 +1,148 @@
+---
+layout: email
+title: A/B Testing
+---
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="center">
+            <span style="display: block; width: 600px !important; max-width: 600px; height: 1px"
+                  class="mobileOff"></span>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                <tr>
+                    <td align="center" valign="top">
+                        <!-- header -->
+                        {{> e-header}}
+                        <!-- //header -->
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <!--menu-->
+                        {{> e-menu}}
+                        <!--//menu-->
+
+                    </td>
+                </tr>
+                <tr>
+                    <td height="60">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <!--<Contenido>-->
+                        {{> e-heading}}
+                    </td>
+                </tr>
+
+
+
+
+                {{#repeat 3}}
+                    {{> e-products}}
+                {{/repeat}}
+                <!-- Separacion final productos -->
+                <tr>
+                    <td align="center" valign="top">
+                        <table width="560" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td style="font-size:2px; line-height:1px;border-bottom: 1px solid #000000;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td height="50" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                </tr>
+
+
+                <!-- Boton wish list -->
+                <tr>
+                    <td align="center" valign="top" style="height: 36px;">
+                        <div style="padding: 10px">
+                            <a href="https://www.santaeulalia.com/es/wishlist/" target="_blank"
+                               style="text-transform: uppercase;font-size: 12px !important;color: #FFFFFF;text-decoration: none !important;background: #000000;display: block !important;text-align: center;width: 180px !important;mso-line-height-rule: exactly;line-height: 20px !important;border-top: 4px solid #000;border-bottom: 4px solid #000;border-left: 10px solid #000;border-right: 10px solid #000;font-family: Arial, Tahoma, Helvetica, sans-serif;">
+                            <span style="display: inline-block !important; background-color: #000000; color:#ffffff !important; text-transform: uppercase;letter-spacing: -0.5px;line-height: 20px !important;">
+                                <font color="#FFFFFF;"
+                                      style="text-decoration: none !important;color: #FFFFFF !important;line-height: 20px !important;">
+                                    Ir a mi lista de deseos
+                                 </font>
+                            </span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <!-- //Boton wish list -->
+                <tr>
+                    <td height="80" style="font-size:10px;line-height:10px;">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td align="center" valign="top">
+                        <!--<BOTONES>-->
+                        {{> e-button-group}}
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                </tr>
+                <!--<ICONOS>-->
+                <tr>
+                    <td align="center" valign="top">
+                        {{> e-icons}}
+                    </td>
+                <tr>
+                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-size:2px; line-height:1px;border-bottom: 2px solid #000000; margin:0 35px 15px 30px; display:block; ">
+                        &nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        {{> e-footerOLD}}
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <table width="480" cellpadding="0" cellspacing="0" border="0" class="container"
+                               style="margin-top: 32px;">
+                            <tr>
+                                <td width="230" align="center" valign="center" style="text-align: center;">
+                                    <a style="font-size: 10px !important;color: #000000;text-decoration: none !important;" href="https://www.santaeulalia.com/es/privacy" target="_blank">
+                                        <span style="color:#000000;text-decoration: none !important;">
+                                            <font color="#000000;" style="text-decoration: none !important;color: #000000 !important;">
+                                                Darse de baja
+                                            </font>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

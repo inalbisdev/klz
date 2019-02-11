@@ -64,14 +64,12 @@
     }
   }
   &--moskva{
-    background: $a-button-moskva-background;
-    color: $a-button-moskva-color;
-    border: 1px solid transparent;
-    transition: .6s background-color;
+    background: $a-button-madrid-background;
+    color: $a-button-madrid-color;
+    transition: .3s all ease-in-out;
     &:hover{
-      background: $color-white;
-      color: $color-black;
-      border-color: $color-black;
+      background-color: #4451aa;
+      color: #fff;
     }
   }
   &--oslo{
@@ -87,6 +85,14 @@
   &--paris{
     background: $a-button-paris-background;
     color: $a-button-paris-color;
+  }
+  &--madrid{
+    background: $a-button-madrid-background;
+    color: $a-button-madrid-color;
+    &:hover{
+      background-color: #4451aa;
+      color: #fff;
+    }
   }
 
   &--fit{

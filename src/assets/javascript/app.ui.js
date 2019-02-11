@@ -8,12 +8,15 @@ module.exports = (function () {
         toggle: require('./ui/toggle'),
         shadow: require('./ui/shadow'),
         scrollTop: require('./ui/scrollTop'),
-        fixedHeader: require('./ui/fixedHeader'),
         cookies: require('./ui/cookies'),
         validation: require('./ui/validation'),
         mvpValidation: require('./ui/mvpValidation'),
         slider: require('./ui/slider'),
-        lang: require('./ui/lang')
+        header: require('./ui/fixedHeader'),
+        dropwdown: require('./ui/dropwdown'),
+        anchorNav: require('./ui/anchorNav'),
+        //imageParallax: require('./ui/imageParallax')
+
     };
 })();
 

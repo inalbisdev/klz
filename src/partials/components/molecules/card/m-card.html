@@ -5,6 +5,9 @@
         <picture>
             <img src="{{root}}{{m-card__media}}"/>
         </picture>
+        {{#if m-card__media-caption}}
+            <span class="m-card__media-caption">{{m-card__media-caption}}</span>
+        {{/if}}
     </div>
 
     {{/if}}
@@ -15,7 +18,7 @@
             {{m-card__avobe-line}}
         </div>
         {{/if}}
-        <h3 class="m-card__title  {{#if m-card__title-class}} {{m-card__title-class}}{{else}}a-typo-hawking a-color-primary{{/if}} a-typo--bold" itemprop="serviceType">
+        <h3 class="m-card__title  {{#if m-card__title-class}} {{m-card__title-class}}{{else}}a-typo-hawking{{/if}} a-typo--bold" itemprop="serviceType">
            {{{m-card__title}}}
         </h3>
         <p class="m-card__text" itemprop="description">

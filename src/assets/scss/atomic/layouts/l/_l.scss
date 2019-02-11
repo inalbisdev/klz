@@ -35,9 +35,14 @@
     }
   }
 
+  &--full{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   &-main{
     &__main{
+      /*
       margin-top: 108px;
       @media (max-width: 1023px){
         margin-top: 68px;
@@ -48,6 +53,7 @@
           margin-top: 100px;
         }
       }
+      */
     }
   }
 }

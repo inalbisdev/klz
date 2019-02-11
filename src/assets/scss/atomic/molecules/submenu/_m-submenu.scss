@@ -1,42 +1,86 @@
 .m-submenu{
-  background-color: #FAFAFA;
-  border: 1px solid #979797;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  background-color: #fff;
+  border: 1px solid #e8eaed;
   min-width: 420px;
   width: 100%;
-  padding: 25px 25px 5px 25px;
-  &__title{
-    position: relative;
-    display: inline-block;
-    padding-bottom: 3px;
-    margin-bottom: 30px;
-    &::after{
-      content: "";
-      bottom: -3px;
-      position: absolute;
-      width: 0;
-      height: 3px;
-      left: 0;
-      background: $gradient-klarenz;
-      transition: .6s width linear;
+
+  &__icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    svg{
+      width: 30px;
+      height: 30px;
     }
+    &-path{
+      transition: .3s fill ease-in-out;
+      fill: #5f6368;
+    }
+  }
+  &__title{
+    left: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s transform ease-in-out, .25s opacity ease-in-out;
+
+  }
+  &__rollover{
+    transform: translateY(64px);
+    opacity: 0;
+    transition: .25s opacity ease-in-out, .25s transform ease-in-out;
+    padding-left: 10px;
+    color: #5f6368;
   }
   &__links{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 25px;
   }
   &__item{
-    width: 50%;
+    width: 33.333%;
+    position: relative;
     margin-bottom: 15px;
   }
   &__link{
-    font-size: 14px;
     text-decoration: none;
-    color: $color-black;
-
+    display: flex;
+    align-items: center;
+    color: #5f6368;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    white-space: normal;
     &:hover{
-      color: $color-primary;
+      color: #000;
+      .m-submenu__title{
+        opacity: 0;
+        transform: translateY(-64px)
+      }
+      .m-submenu__rollover{
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .m-submenu__icon-path{
+        fill: $color-primary;
+      }
+    }
+  }
+  &__see-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e8eaed;
+    padding: 16px 0;
+    .a-button{
+      background: none;
+      color: #3367d6;
+      font-weight: 700;
     }
   }
 }

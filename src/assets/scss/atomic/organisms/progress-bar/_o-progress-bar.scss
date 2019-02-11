@@ -5,8 +5,8 @@ body::-webkit-scrollbar {
 }
 
 .o-progress-bar{
-  position: absolute;
-  bottom: -2px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   height: 2px;

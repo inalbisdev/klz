@@ -1,21 +1,32 @@
 <div class="o-nav-mobile">
-    <a class="o-nav-mobile__close js-toggle" data-toggle="body" data-toggle-class="menu-is-open">Cerrar</a>
+    <a class="o-nav-mobile__close js-toggle" data-toggle="body" data-toggle-class="menu-is-open">
+        <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="baseline-close-24px" transform="translate(-5.000000, -5.000000)">
+                    <polygon id="Path" fill="#000000" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
+                    <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </svg>
+    </a>
+    <div class="o-nav-mobile__logo">
+        {{> a-logo-color}}
+    </div>
     <ul class="o-nav-mobile__links">
+        <li class="o-nav-mobile__links-item o-nav-mobile__links-item--is-active">
+            <a href="#" class="o-nav-mobile__submenu-link">Home</a>
+        </li>
         <li class="o-nav-mobile__links-item">
-            <a href="{{root}}la-agencia.html" class="o-nav-mobile__links-link">La agencia</a>
+            <a href="{{root}}la-agencia.html" class="o-nav-mobile__links-link">La Agencia</a>
         </li>
         <li class="o-nav-mobile__links-item o-nav-mobile__links-item--has-submenu">
-            <a href="#" class="o-nav-mobile__links-link js-toggle" data-toggle="#submenu-mobile" data-toggle-class="is-active">
+            <a href="#" class="o-nav-mobile__links-link">
                 Servicios
-                <svg class="o-nav-mobile__arrow" width="117px" height="63px" viewBox="0 0 117 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="down-arrow" fill="#ffffff" fill-rule="nonzero">
-                            <path d="M115.3,1.6 C113.7,1.77635684e-15 111.1,1.77635684e-15 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,1.77635684e-15 3.2,1.77635684e-15 1.6,1.6 C-1.55431223e-15,3.2 -1.55431223e-15,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6 Z" id="Shape"></path>
-                        </g>
-                    </g>
-                </svg>
             </a>
-            <ul class="o-nav-mobile__submenu" id="submenu-mobile">
+            <ul class="o-nav-mobile__submenu is-active" id="submenu-mobile">
+
+
+
                 <li class="o-nav-mobile__submenu-item">
                     <a href="marketing-online.html" class="o-nav-mobile__submenu-link">Marketing Online</a>
                 </li>
@@ -46,12 +57,10 @@
             <a href="#" class="o-nav-mobile__links-link">Proyectos</a>
         </li>
         <li class="o-nav-mobile__links-item">
-            <a href="{{root}}consultoria.html" class="o-nav-mobile__links-link">Consultoría</a>
-        </li>
-        <li class="o-nav-mobile__links-item">
             <a href="{{root}}contacta-con-nosotros.html"class="o-nav-mobile__links-link">Contacto</a>
         </li>
     </ul>
+    <!--
     <div class="o-nav-mobile__bottom">
         <div class="o-nav-mobile__box">
             <a href="tel:936317179" class="o-nav-mobile__link">
@@ -78,4 +87,5 @@
             </a>
         </div>
     </div>
+    -->
 </div>

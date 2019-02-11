@@ -3,7 +3,7 @@
 .o-footer{
   margin-top: 120px;
   padding: 50px;
-  background-color: #222;
+  background-color: #f6f6f6;
   display: flex;
   align-items: flex-start;
   @media (max-width: 1200px){
@@ -21,7 +21,7 @@
     &-claim{
       margin-left: -80px;
       span{
-        color: #C6C6C6;
+        color: #4f4d4d;
         font-size: 14px;
         display: block;
       }
@@ -72,19 +72,19 @@
 
   &__title{
     font-size: 16px;
-    color: #c6c6c6;
+    color: #4f4d4d;
     text-transform: uppercase;
     font-family: $font-bold;
   }
 
   &__box{
     padding-top: 10px;
-    color: #c6c6c6;
+    color: #4f4d4d;
     font-size: 14px;
   }
 
   &__link{
-    color: #c6c6c6;
+    color: #4f4d4d;
     font-size: 14px;
     display: block;
     padding-bottom: 10px;

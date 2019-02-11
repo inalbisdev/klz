@@ -1,5 +1,5 @@
 .o-secondary-navigation{
-  background: #C6C6C6;
+  background: #f6f6f6;
   padding: 20px 50px;
   //margin-top: -42px;
   overflow-x: auto;
@@ -40,7 +40,7 @@
       padding-right: 0;
     }
     &.is-active{
-      font-family: $font-bold;
+      font-weight: 600;
       pointer-events: none;
     }
   }

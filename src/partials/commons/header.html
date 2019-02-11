@@ -1,70 +1,32 @@
 <header class="o-header">
     <div class="o-header__top">
-        <div class="o-header__contact">
-            <div class="m-phone-switch">
-                <span class="m-phone-switch__item m-phone-switch__item--desktop a-small-link">Teléfono 93 631 71 79</span>
-                <a class="m-phone-switch__item m-phone-switch__item--mobile a-small-link" href="tel:936317179">Teléfono
-                    93 631 71 79</a>
-            </div>
-            <div class="o-header__email">
-                <a class="a-small-link" href="contacta-con-nosotros.html">info@klarenz.com</a>
-            </div>
-        </div>
-        <div class="o-header__social">
-            <a class="a-small-link" href="#" target="_blank" rel="noopener">Facebook</a>
-            <a class="a-small-link" href="#" target="_blank" rel="noopener">Instagram</a>
-        </div>
-
-        <div id="google_translate_element" style="display:none"></div>
-        <div class="og-i18n-flag og-i18n-flag--fold">
-            <ul class="og-i18n-flag--list">
-                <li class="og-i18n-flag--element is-active" data-language="es">
-                    <span class="og-i18n-flag--element--svg notranslate">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1024 614.131" enable-background="new 0 0 1024 614.131" xml:space="preserve">
-<g id="Sidebar">
-	<rect id="rect171" x="0.037" y="0.527" fill="#E31937" width="1023.321" height="612.309"/>
-	<rect id="rect403" y="152.876" fill="#FDB913" width="1023.63" height="306.155"/>
-</g>
-</svg>
-                    </span>
-                    <span class="og-i18n-flag--element--text notranslate">ES</span>
-                </li>
-                <li class="og-i18n-flag--element " data-language="en">
-                    <span class="og-i18n-flag--element--svg notranslate">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
-    <clipPath id="t">
-        <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
-    </clipPath>
-    <path d="M0,0 v30 h60 v-30 z" fill="#00247d"/>
-    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
-    <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#cf142b" stroke-width="4"/>
-    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
-    <path d="M30,0 v30 M0,15 h60" stroke="#cf142b" stroke-width="6"/>
-</svg>
-                    </span>
-                    <span class="og-i18n-flag--element--text notranslate">EN</span>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="o-header__bottom">
         <!-- Logo -->
         <div class="o-header__logo-switch">
-            <a href="./{{root}}" class="o-header__logo o-header__logo--fixed">
-                {{> a-logo-simple-color viewBox="0 0 841.9 595.3"}}
-            </a>
             <a href="./{{root}}" class="o-header__logo">
                 {{> a-logo-color}}
             </a>
         </div>
+    </div>
+    <div class="o-header__bottom">
+
         <!--  Desktop Navigation -->
         <nav class="o-header__nav">
             <ul>
+
+                <li class="o-header__nav-item o-header__nav-item--active">
+                    <a href="#" class="o-header__nav-link">Home</a>
+                </li>
+
                 <li class="o-header__nav-item">
                     <a href="{{root}}la-agencia.html" class="o-header__nav-link">La Agencia</a>
                 </li>
-                <li class="o-header__nav-item o-header__nav-item--has-dropdown js-dropdown">
+                <li class="o-header__nav-item">
+                    <a href="{{root}}valores.html" class="o-header__nav-link">Valores</a>
+                </li>
+                <li class="o-header__nav-item">
+                    <a href="{{root}}futuro.html" class="o-header__nav-link">Futuro</a>
+                </li>
+                <li class="o-header__nav-item o-header__nav-item--has-dropdown js-dropdown" data-target="#megaMenu">
                     <a href="#" class="o-header__nav-link">Servicios</a>
                     <svg class="o-header__nav-arrow" width="117px" height="63px" viewBox="0 0 117 63" version="1.1"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,16 +37,11 @@
                             </g>
                         </g>
                     </svg>
-                    <div class="o-header__submenu">
-                        {{> m-submenu}}
-                    </div>
-                </li>
-                <li class="o-header__nav-item">
-                    <a href="{{root}}consultoria.html" class="o-header__nav-link">Consultoría</a>
+                    {{> o-mega-menu}}
                 </li>
 
                 <li class="o-header__nav-item">
-                    <a href="#" class="o-header__nav-link">Proyectos</a>
+                    <a href="{{root}}proyectos.html" class="o-header__nav-link">Proyectos</a>
                 </li>
 
                 <li class="o-header__nav-item">
@@ -92,14 +49,19 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="o-header__button">
+            <a class="a-button a-button--moskva" href="#">
+                Become a Member
+            </a>
+        </div>
         <!-- Mobile Ham -->
         <div class="o-header__ham">
             {{> a-ham toggle="body" toggle-class="menu-is-open"}}
         </div>
-        <!-- Mobile Navigation -->
-        <div class="o-header__nav o-header__nav--mobile">
-            {{> o-nav-mobile}}
-        </div>
-        {{> o-progress-bar}}
+
     </div>
 </header>
+
+{{> o-nav-mobile}}
+{{> o-progress-bar}}

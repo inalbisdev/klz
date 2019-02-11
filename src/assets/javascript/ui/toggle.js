@@ -53,6 +53,7 @@ module.exports = {
         let that = this;
 
         $(this.locators.$trigger).on('click',function (e) {
+            e.stopImmediatePropagation();
             e.preventDefault();
             that.doToggle($(this));
         });

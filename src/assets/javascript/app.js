@@ -22,11 +22,14 @@ const App = {
         App.ui.toggle.init();
         App.ui.shadow.init();
         App.ui.scrollTop.init();
-        App.ui.fixedHeader.init();
         App.ui.cookies.init();
         App.ui.validation.init();
         App.ui.mvpValidation.init();
         App.ui.slider.init();
+        App.ui.header.init();
+        App.ui.dropwdown.init();
+        App.ui.anchorNav.init();
+        //App.ui.imageParallax.init();
     };
     initAll();
 })();

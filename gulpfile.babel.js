@@ -69,6 +69,7 @@ gulp.task('webpack', function () {
                 }
             ],
 
+            /*
             plugins: [new UglifyJsPlugin({
                 uglifyOptions: {
                     output: {
@@ -77,6 +78,7 @@ gulp.task('webpack', function () {
                     }
                 }
             })]
+            */
 
         }))
         .pipe(gulp.dest('dist/assets/javascript/'));
